@@ -1,8 +1,8 @@
 import crypto from 'crypto';
 
 const validateMercadoPago = (headers, params) => {
-  const xSignature = headers['x-signature'];
-  const xRequestId = headers['x-request-id'];
+  const xSignature = headers['X-Signature'];
+  const xRequestId = headers['X-Request-Id'];
 
   const dataID = params['data.id'];
 
